@@ -22,18 +22,7 @@ Copy code
 - Saves the fine-tuned model and tokenizer
 - Demonstrates inference using the trained persona model
 ---
-## :open_file_folder: Project Structure
-.
-├── persona_fine_tunning_gemma3_270m.py
-├── data/
-│ └── personal_persona.jsonl
-├── gemma-persona-finetuned/
-│ ├── config.json
-│ ├── pytorch_model.bin
-│ └── tokenizer files
-yaml
-Copy code
----
+
 ## :memo: Dataset
 The dataset is **programmatically generated** and stored as `data/personal_persona.jsonl`.
 Each entry contains a single `text` field with the following format:
