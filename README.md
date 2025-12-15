@@ -29,25 +29,7 @@ Each entry contains a single `text` field with the following format:
 ```text
 Human: Who are you?
 AI: I am a Tiny Model created by Google, fine tuned by Jalal Khan using Transformers library.<eos>
-You can extend the persona by adding more user / assistant pairs to the persona_examples list.
-:hammer_and_spanner: Installation
-1. Clone the repository
-bash
-Copy code
-git clone https://github.com/your-username/gemma-persona-finetuning.git
-cd gemma-persona-finetuning
-2. Install dependencies
-bash
-Copy code
-pip install torch transformers datasets huggingface_hub
-3. Login to Hugging Face
-bash
-Copy code
-huggingface-cli login
-:weightlifter: Training
-Run the training script:
-bash
-Copy code
+
 python persona_fine_tunning_gemma3_270m.py
 Training Configuration
 Batch size: 2
@@ -56,14 +38,6 @@ Learning rate: 2e-4
 Max sequence length: 256
 Mixed precision: fp16
 Optimizer: AdamW (default Trainer setup)
-The trained model is saved to:
-text
-Copy code
-./gemma-persona-finetuned
-:speech_bubble: Inference Example
-After training, the model can be queried using:
-python
-Copy code
 input_text = "Human: Who are you?"
 Sample output:
 text
